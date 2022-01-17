@@ -1,0 +1,67 @@
+#concertList {
+  font-family: 'Open Sans';
+  padding: 1em;
+}
+
+#bmm_logo {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#root-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.listOfPlayers {
+  color: #FFFFFF;
+  font-size: 1.2em;
+  font-family: 'Open Sans';
+}
+
+.navbarHeadings {
+  color: #FFFFFF;
+  text-align: right;
+}
+
+p {
+  font-family: open sans;
+  font-size: 1.2em;
+  padding: 1em;
+  color: #FFFFFF;
+  text-align: justify;
+}
+
+.BMMHeadingH1 {
+  font-family: Open sans;
+  padding: 1em;
+  font-size: 1.5em;
+  color: #E3D5C8;
+  padding-top: 2em;
+}
+
+#bmmHeading {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: url("../../assets/img/bmm_background.png");
+  background-size: cover;
+  height: 30em;
+}
+
+#bmmHeadingText {
+  padding-top: 4em;
+  display: inline-block;
+  color: #E3D5C8;
+  letter-spacing: 0.6em;
+}
+
+#logo {
+  height: 2.5em;
+}
+
+.footer {
+  background: #2F261E;
+}
