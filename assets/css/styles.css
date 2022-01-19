@@ -13,6 +13,7 @@
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: #2F261E;
 }
 
 .listOfPlayers {
@@ -32,6 +33,11 @@ p {
   padding: 1em;
   color: #FFFFFF;
   text-align: justify;
+}
+
+
+a:hover {
+  font-weight: 900;
 }
 
 .BMMHeadingH1 {
@@ -58,10 +64,22 @@ p {
   letter-spacing: 0.6em;
 }
 
+#mainContent {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 #logo {
   height: 2.5em;
 }
 
 .footer {
   background: #2F261E;
+}
+
+#BMMCredit {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0;
+  margin-left: 5%;
 }
