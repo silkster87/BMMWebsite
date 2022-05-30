@@ -1,3 +1,7 @@
+:root {
+  --main-h1-color: #E3D5C8;
+}
+
 #concertList {
   font-family: 'Open Sans';
   padding: 1em;
@@ -44,7 +48,7 @@ a:hover {
   font-family: Open sans;
   padding: 1em;
   font-size: 1.5em;
-  color: #E3D5C8;
+  color: var(--main-h1-color);
   padding-top: 2em;
 }
 
@@ -60,8 +64,33 @@ a:hover {
 #bmmHeadingText {
   padding-top: 4em;
   display: inline-block;
-  color: #E3D5C8;
+  color: var(--main-h1-color);
   letter-spacing: 0.6em;
+}
+
+.eventsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.eventItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 1px solid var(--main-h1-color);
+  width: 90%;
+  margin: auto;
+}
+
+.eventDate {
+  font-size: 1.4em;
+  
+}
+
+.eventDesc {
+  text-align: right;
+  width: 50%;
 }
 
 #mainContent {
