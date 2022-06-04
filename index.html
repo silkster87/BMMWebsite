@@ -14,9 +14,9 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-dark navbar-expand-md fixed-top portfolio-navbar gradient" style="background: #2F261E;">
-    <div class="container-fluid"><img src="assets/img/bmm_logo.png" id="bmm_logo" style="width: 50px" >
-      <a class="navbar-brand" href="#" style="color: #E3D5C8;margin-left:20px">BMM</a>
+  <nav class="navbar navbar-dark navbar-expand-md fixed-top portfolio-navbar gradient">
+    <div class="container-fluid"><img src="assets/img/bmm_logo.png" id="bmm_logo">
+      <p class="navbar-brand" href="#" id="brand-text">BROMLEY MUSIC MAKERS</p>
       <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-1" aria-expanded="false" aria-label="Toggle navigation"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
         <div id="navcol-1" class="collapse navbar-collapse">
             <ul class="navbar-nav ms-auto">
@@ -29,12 +29,12 @@
   </nav>
     <div id="root-container">
         <div id="bmmHeading">
-            <p id="bmmHeadingText" style="color: var(--bs-white);text-align: center;font-size: 34px;margin-bottom: 0px;"><br>BROMLEY<br>MUSIC<br>MAKERS<br></p>
+            <p id="bmmHeadingText"><br>BROMLEY<br>MUSIC<br>MAKERS<br></p>
         </div>
-        <div id="mainContent" style="margin-left: 5px;margin-right: 5px;margin-top: 0;">
-            <div class="row">
-                <div class="col-md-6" style="background: #222120;padding-bottom: 20px;margin-bottom: 0px;margin-left: 0px;padding-left: 5%;">
-                    <h1 class="BMMHeadingH1"><span style="text-decoration: underline;">A LOCAL MUSIC GROUP</span></h1>
+        <div id="mainContent">
+            <div class="row content-row">
+                <div class="col-md-6">
+                    <h1 class="BMMHeadingH1"><span>A LOCAL MUSIC GROUP</span></h1>
                     <p>
                       Bromley Music Makers (BMM) hold monthly concerts of live classical music with the aim of giving 
                       pleasure to those who enjoy performing or listening to music.​ BMM concerts for 2021/22 season will now be held in:​<br>
@@ -49,14 +49,14 @@
                         Please contact the <a href="mailto:JohnMPerkins16@gmail.com?subject=BMM%20%C2%A310%20discount%20from%20last%20Season" style="color:white">treasurer</a> for enquiries for this discount.<br />
                     </p>
                     <p style="margin-bottom: 0px;">Members have the opportunity to hear or take part in performances of classical music in the form of solo items or small ensembles. Music lovers of all ages are welcome, including:</p>
-                    <ul style="padding: 40px;">
-                        <li class="listOfPlayers" >Listening members</li>
-                        <li class="listOfPlayers" >Wind Players</li>
-                        <li class="listOfPlayers" >String Players</li>
-                        <li class="listOfPlayers" >Singers</li>
-                        <li class="listOfPlayers" >Pianists</li>
+                    <ul style="padding: 40px;" class="listOfPlayers">
+                        <li>Listening members</li>
+                        <li>Wind Players</li>
+                        <li>String Players</li>
+                        <li>Singers</li>
+                        <li>Pianists</li>
                     </ul>
-                    <h1 id="concertsHeading" style="font-family: Open sans;padding: 20px;font-size: 24px;color: #E3D5C8;"><span style="text-decoration: underline;">CONCERTS - 77th SEASON</span></h1>
+                    <h1 id="concertsHeading" class="BMMHeadingH1"><span>CONCERTS - 77th SEASON</span></h1>
                     <h1 class="text-white">2021</h1>
                     <p id="concertList" class="text-break text-start text-white">
                       Saturday September 25th<br>​
@@ -78,8 +78,12 @@
                     <div></div>
                 </div>
                 <div class="col" style="background: #222120;padding-right: 5%;">
-                    <h1 id="upcomingEvents" class="BMMHeadingH1"><span style="text-decoration: underline;">UPCOMING EVENTS</span> </h1>
+                    <h1 id="upcomingEvents" class="BMMHeadingH1"><span>UPCOMING EVENTS</span> </h1>
                     <div class="eventsContainer">
+                      <div class="eventItem">
+                        <div class="eventDate"><p>June 11th</p></div>
+                        <div class="eventDesc"><p>BMM concert: June 11th (Complete works), 3-5pm</p></div>
+                      </div>
                       <div class="eventItem">
                         <div class="eventDate"><p>June 11th</p></div>
                         <div class="eventDesc"><p>BMM concert: June 11th (Complete works), 3-5pm</p></div>
@@ -119,7 +123,6 @@
         </div>
     </div>
     <button id="topButton" class="btn btn-primary" type="button" onclick="topFunction()"><strong>^</strong></button>
-    <!--<script src="assets/bootstrap/js/bootstrap.min.js"></script>-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
 </body>

@@ -1,5 +1,7 @@
 :root {
   --main-h1-color: #E3D5C8;
+  --content-background-color: #222120;
+  --container-background-color: #2F261E;
 }
 
 #concertList {
@@ -7,9 +9,14 @@
   padding: 1em;
 }
 
+nav {
+  background-color: var(--container-background-color);
+}
+
 #bmm_logo {
   padding-top: 5px;
   padding-bottom: 5px;
+  width: 50px;
 }
 
 #root-container {
@@ -17,25 +24,31 @@
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: #2F261E;
+  background-color: var(--container-background-color);
 }
 
 .listOfPlayers {
-  color: #FFFFFF;
+  color: white;
   font-size: 1.2em;
   font-family: 'Open Sans';
 }
 
 .navbarHeadings {
-  color: #FFFFFF;
+  color: white;
   text-align: right;
+}
+
+#brand-text {
+  color: #E3D5C8;
+  margin-left:20px;
+  margin-top: 15px;
 }
 
 p {
   font-family: open sans;
   font-size: 1.2em;
   padding: 1em;
-  color: #FFFFFF;
+  color: white;
   text-align: justify;
 }
 
@@ -47,25 +60,34 @@ a:hover {
 .BMMHeadingH1 {
   font-family: Open sans;
   padding: 1em;
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: var(--main-h1-color);
   padding-top: 2em;
+  white-space: nowrap;
+}
+
+.BMMHeadingH1 > span {
+  text-decoration: underline;
+  text-underline-offset: 15px;
 }
 
 #bmmHeading {
   display: flex;
   justify-content: center;
   text-align: center;
+  align-items: center;
   background: url("../../assets/img/bmm_background.png");
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 30em;
+  height: 40vh;
 }
 
 #bmmHeadingText {
-  padding-top: 4em;
   display: inline-block;
   color: var(--main-h1-color);
   letter-spacing: 0.6em;
+  font-size: 2em;
+  text-align: center;
 }
 
 .eventsContainer {
@@ -78,6 +100,8 @@ a:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding-bottom: 2em;
+  padding-top: 2em;
   border-bottom: 1px solid var(--main-h1-color);
   width: 90%;
   margin: auto;
@@ -96,6 +120,14 @@ a:hover {
 #mainContent {
   padding-left: 5%;
   padding-right: 5%;
+  margin-top: 10px;
+}
+
+.content-row {
+  background-color: var(--content-background-color);
+  border: 1px solid var(--main-h1-color);
+  border-radius: 5px;
+  padding: 20px;
 }
 
 #logo {
@@ -111,4 +143,5 @@ a:hover {
   margin-bottom: 0px;
   padding: 0;
   margin-left: 5%;
+  font-size: 0.9em;
 }
